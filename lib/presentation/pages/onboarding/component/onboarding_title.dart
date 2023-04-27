@@ -1,4 +1,5 @@
 import 'package:booking/config/config.dart';
+import 'package:booking/utils/extension/extension.dart';
 import 'package:booking/presentation/pages/onboarding/onboarding_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,6 +22,7 @@ class OnboardingTitle extends StatelessWidget {
               style: AppFont.h3,
               textAlign: TextAlign.center,
             ),
+            8.0.height,
             Text(
               cubit.state.onboardingList[cubit.state.currentIndex]
                       .description ??
