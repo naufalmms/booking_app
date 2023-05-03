@@ -1,0 +1,29 @@
+import 'package:booking/config/config.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'login_cubit.dart';
+import 'login_state.dart';
+
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocProvider(
+      create: (BuildContext context) => LoginCubit(),
+      child: Builder(builder: (context) => _buildPage(context)),
+    );
+  }
+
+  Widget _buildPage(BuildContext context) {
+
+
+    return Scaffold(
+      backgroundColor: AppColor.acccentBlue,
+      body: Container(),
+    );
+  }
+}
+
+

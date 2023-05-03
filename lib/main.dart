@@ -1,5 +1,6 @@
 import 'package:booking/data/src/img_string.dart';
 import 'package:booking/presentation/pages/onboarding/onboarding_view.dart';
+import 'package:booking/presentation/pages/welcome/welcome_view.dart';
 import 'package:booking/presentation/widget/primary_button.dart';
 import 'package:booking/presentation/widget/secondary_button.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Booking App',
           theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Poppins'),
-          home: OnboardingPage(),
+          home: WelcomePage(),
         );
       },
     );
