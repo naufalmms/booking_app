@@ -1,8 +1,4 @@
-import 'package:booking/data/src/img_string.dart';
-import 'package:booking/presentation/pages/onboarding/onboarding_view.dart';
-import 'package:booking/presentation/pages/welcome/welcome_view.dart';
-import 'package:booking/presentation/widget/primary_button.dart';
-import 'package:booking/presentation/widget/secondary_button.dart';
+import 'package:booking/presentation/pages/welcome/welcome_done/welcome_done_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -21,11 +17,10 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-
         return MaterialApp(
           title: 'Booking App',
           theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Poppins'),
-          home: WelcomePage(),
+          home: WelcomeDonePage(),
         );
       },
     );
