@@ -1,4 +1,4 @@
-import 'package:booking/presentation/pages/welcome/welcome_done/welcome_done_view.dart';
+import 'package:booking/presentation/pages/discover/discover_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Booking App',
           theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Poppins'),
-          home: WelcomeDonePage(),
+          home: DiscoverPage(),
         );
       },
     );
