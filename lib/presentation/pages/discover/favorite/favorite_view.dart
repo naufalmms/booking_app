@@ -1,6 +1,10 @@
+import 'package:booking/presentation/pages/discover/favorite/component/favorite_header.dart';
+import 'package:booking/presentation/pages/discover/favorite/component/favorite_list.dart';
+import 'package:booking/presentation/pages/discover/favorite/component/favorite_title.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../config/config.dart';
 import 'favorite_cubit.dart';
 
 class FavoritePage extends StatelessWidget {
@@ -17,6 +21,15 @@ class FavoritePage extends StatelessWidget {
   Widget _buildPage(BuildContext context) {
     final cubit = BlocProvider.of<FavoriteCubit>(context);
 
-    return Container();
+    return Scaffold(
+      backgroundColor: AppColor.ink05,
+      body: Column(
+        children: const [
+          FavoriteTitle(),
+          FavoriteHeader(),
+          FavoriteList(),
+        ],
+      ),
+    );
   }
 }

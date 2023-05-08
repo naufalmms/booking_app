@@ -17,6 +17,7 @@ class TripsYourRoomies extends StatelessWidget {
       child: Column(
         children: [
           _header(),
+          20.0.height,
           _roomiesList(),
         ],
       ),
@@ -27,7 +28,7 @@ class TripsYourRoomies extends StatelessWidget {
     return Expanded(
       child: ListView.builder(
         itemBuilder: (c, i) => _roomiesItem(),
-        itemCount: 3,
+        itemCount: 4,
       ),
     );
   }
